@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 📌 精简版模板
-      link: /精简版/
+      link: /simple/
     - theme: alt
       text: 📋 完整版模板
-      link: /完整版/
+      link: /full/
 
 features:
   - icon: 📦

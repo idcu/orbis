@@ -10,14 +10,14 @@ const currentPath = computed(() => route.path)
 // 是否在模板页面中（非首页、非目录页）
 const isTemplatePage = computed(() => {
   const path = currentPath.value
-  return path.includes('/精简版/') || path.includes('/完整版/')
+  return path.includes('/simple/') || path.includes('/full/')
 })
 
 // 是否在首页
 const isHome = computed(() => currentPath.value === '/')
 
 // 判断当前处于哪个版本
-const isFull = computed(() => currentPath.value.includes('/完整版/'))
+const isFull = computed(() => currentPath.value.includes('/full/'))
 
 // 当前版本名
 const currentVersion = computed(() => isFull.value ? '完整版' : '精简版')
@@ -25,13 +25,13 @@ const currentVersion = computed(() => isFull.value ? '完整版' : '精简版')
 // 切换链接：在模板页面中同步跳转，在首页/目录页跳转到对应目录首页
 const toggleLink = computed(() => {
   const path = currentPath.value
-  if (path.includes('/精简版/')) {
-    return path.replace('/精简版/', '/完整版/')
-  } else if (path.includes('/完整版/')) {
-    return path.replace('/完整版/', '/精简版/')
+  if (path.includes('/simple/')) {
+    return path.replace('/simple/', '/full/')
+  } else if (path.includes('/full/')) {
+    return path.replace('/full/', '/simple/')
   }
   // 首页或其他页面：跳转到精简版目录首页
-  return '/精简版/'
+  return '/simple/'
 })
 
 const toggleLabel = computed(() => {
