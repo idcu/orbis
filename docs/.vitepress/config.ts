@@ -4,10 +4,6 @@ export default defineConfig({
   title: '通用文档模板体系',
   description: '全语言、全栈通用文档模板集合 — 精简版与完整版双层级',
   lang: 'zh-CN',
-  markdown: {
-    // 禁用代码块中的 Vue 插值处理
-    codeTransformers: [],
-  },
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
