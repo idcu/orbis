@@ -166,6 +166,36 @@ export default defineConfig({
           ],
         },
       ],
+      '/guide': [
+        {
+          text: '📖 使用指南',
+          items: [
+            { text: '快速开始', link: '/guide#快速开始' },
+            { text: '模板分类总览', link: '/guide#模板分类总览' },
+            { text: '精简版 vs 完整版', link: '/guide#精简版-vs-完整版' },
+          ],
+        },
+        {
+          text: '使用顺序',
+          collapsed: true,
+          items: [
+            { text: '项目启动阶段', link: '/guide#项目启动阶段' },
+            { text: '模块开发阶段', link: '/guide#模块开发阶段' },
+            { text: '工程化配置阶段', link: '/guide#工程化配置阶段' },
+            { text: '开发执行阶段', link: '/guide#开发执行阶段' },
+            { text: '团队协作', link: '/guide#团队协作' },
+          ],
+        },
+        {
+          text: '进阶',
+          collapsed: true,
+          items: [
+            { text: '典型使用场景', link: '/guide#典型使用场景' },
+            { text: '与 AI 编程工具配合使用', link: '/guide#与-ai-编程工具配合使用' },
+            { text: '注意事项', link: '/guide#注意事项' },
+          ],
+        },
+      ],
       '/': [
         {
           text: '快速开始',

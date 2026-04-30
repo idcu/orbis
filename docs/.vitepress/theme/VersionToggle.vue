@@ -13,10 +13,11 @@ const isTemplatePage = computed(() => {
   return path.includes('/simple/') || path.includes('/full/')
 })
 
-// 是否在首页（兼容 base 路径）
+// 是否在首页或指南页（兼容 base 路径）
 const isHome = computed(() => {
   const path = currentPath.value
   return path === '/' || path === '/orbis/' || path === '/orbis'
+    || path === '/guide' || path === '/orbis/guide' || path === '/orbis/guide/'
 })
 
 // 判断当前处于哪个版本
