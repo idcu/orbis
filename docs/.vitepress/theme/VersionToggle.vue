@@ -47,6 +47,7 @@ const toggleIcon = computed(() => {
 
 <template>
   <a
+    v-if="!isHome"
     :href="toggleLink"
     class="version-toggle"
     :title="toggleLabel"

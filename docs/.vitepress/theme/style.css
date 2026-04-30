@@ -67,3 +67,29 @@ table td a:hover {
   color: #2c8a5e !important;
   text-decoration: underline !important;
 }
+
+/* 精简版/完整版目录页字体层次 */
+.vp-doc .container h1 {
+  font-size: 32px !important;
+  padding-bottom: 16px !important;
+  border-bottom: 2px solid var(--vp-c-brand-1) !important;
+  margin-bottom: 24px !important;
+}
+
+.vp-doc .container blockquote {
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  color: var(--vp-c-text-2) !important;
+  border-left: 4px solid var(--vp-c-brand-1) !important;
+  padding: 12px 20px !important;
+  margin: 20px 0 28px 0 !important;
+  background: var(--vp-c-bg-soft) !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+.vp-doc .container h2 {
+  font-size: 22px !important;
+  margin-top: 36px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}

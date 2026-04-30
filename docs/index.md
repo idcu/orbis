@@ -41,4 +41,26 @@ features:
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #42b883aa 50%, #3eaf7caa 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
+
+/* 标语排版优化：防止换行 */
+.VPHero .text {
+  font-size: 42px !important;
+  white-space: nowrap;
+}
+
+.VPHero .tagline {
+  font-size: 17px !important;
+  max-width: 680px !important;
+  line-height: 1.7 !important;
+}
+
+@media (max-width: 768px) {
+  .VPHero .text {
+    font-size: 28px !important;
+    white-space: normal;
+  }
+  .VPHero .tagline {
+    font-size: 15px !important;
+  }
+}
 </style>
