@@ -7,17 +7,10 @@ const { frontmatter: fm } = useData()
 
 const currentPath = computed(() => route.path)
 
-// 是否在模板页面中（非首页、非目录页）
-const isTemplatePage = computed(() => {
+// 是否在模板详情页中（仅在 simple/full 子路径下显示切换按钮）
+const showToggle = computed(() => {
   const path = currentPath.value
   return path.includes('/simple/') || path.includes('/full/')
-})
-
-// 是否在首页或指南页（兼容 base 路径）
-const isHome = computed(() => {
-  const path = currentPath.value
-  return path === '/' || path === '/orbis/' || path === '/orbis'
-    || path === '/guide' || path === '/orbis/guide' || path === '/orbis/guide/'
 })
 
 // 判断当前处于哪个版本
@@ -39,19 +32,17 @@ const toggleLink = computed(() => {
 })
 
 const toggleLabel = computed(() => {
-  if (isHome.value) return '📌 精简版'
   return isFull.value ? '📌 切换到精简版' : '📋 切换到完整版'
 })
 
 const toggleIcon = computed(() => {
-  if (isHome.value) return '📋'
   return isFull.value ? '📌' : '📋'
 })
 </script>
 
 <template>
   <a
-    v-if="!isHome"
+    v-if="showToggle"
     :href="toggleLink"
     class="version-toggle"
     :title="toggleLabel"
