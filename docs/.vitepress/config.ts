@@ -14,6 +14,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '📖 使用指南', link: '/guide' },
+      { text: '🤖 AI Skill', link: '/skills' },
     ],
     sidebar: {
       '/simple/': [
@@ -193,6 +194,20 @@ export default defineConfig({
             { text: '典型使用场景', link: '/guide#典型使用场景' },
             { text: '与 AI 编程工具配合使用', link: '/guide#与-ai-编程工具配合使用' },
             { text: '注意事项', link: '/guide#注意事项' },
+          ],
+        },
+      ],
+      '/skills': [
+        {
+          text: '🤖 AI Skill 使用指南',
+          items: [
+            { text: '概述', link: '/skills#什么是-ai-skill' },
+            { text: '安装方式', link: '/skills#安装方式' },
+            { text: 'Skill 总览', link: '/skills#skill-总览' },
+            { text: '触发方式', link: '/skills#触发方式' },
+            { text: '模板映射关系', link: '/skills#模板与-skill-映射关系' },
+            { text: '协同工作流', link: '/skills#skill-协同工作流' },
+            { text: '效率提升', link: '/skills#效率提升' },
           ],
         },
       ],

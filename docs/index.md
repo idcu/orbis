@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: 📋 完整版模板
       link: /full/
+    - theme: alt
+      text: 🤖 AI Skill
+      link: /skills
 
 features:
   - icon: 📦
