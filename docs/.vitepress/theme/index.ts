@@ -3,6 +3,7 @@ import VersionToggle from './VersionToggle.vue'
 import BraceRestorer from './BraceRestorer.vue'
 import type { Theme } from 'vitepress'
 import { h } from 'vue'
+import './style.css'
 
 export default {
   extends: DefaultTheme,
