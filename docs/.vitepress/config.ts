@@ -13,6 +13,7 @@ export default defineConfig({
     logo: '/logo.svg',
     nav: [
       { text: '首页', link: '/' },
+      { text: '📖 使用指南', link: '/guide' },
     ],
     sidebar: {
       '/simple/': [
@@ -170,6 +171,7 @@ export default defineConfig({
           text: '快速开始',
           items: [
             { text: '首页', link: '/' },
+            { text: '📖 使用指南', link: '/guide' },
           ],
         },
         {

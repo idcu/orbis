@@ -17,17 +17,17 @@ README 是模块最重要的文档，是使用者接触模块的第一入口。
 ## 模板内容
 
 ```markdown
-# ｛｛MODULE_NAME｝｝
+# ｛｛模块名称｝｝
 
-｛｛BADGE_BUILD｝｝ ｛｛BADGE_COVERAGE｝｝ ｛｛BADGE_LICENSE｝｝ ｛｛BADGE_VERSION｝｝
+｛｛构建状态徽章｝｝ ｛｛覆盖率徽章｝｝ ｛｛许可证徽章｝｝ ｛｛版本徽章｝｝
 
-> ｛｛ONE_LINE_DESCRIPTION｝｝
+> ｛｛一句话描述｝｝
 
 ## 特性
 
-- ｛｛FEATURE_1｝｝
-- ｛｛FEATURE_2｝｝
-- ｛｛FEATURE_3｝｝
+- ｛｛特性1｝｝
+- ｛｛特性2｝｝
+- ｛｛特性3｝｝
 
 ## 安装
 
@@ -35,67 +35,67 @@ README 是模块最重要的文档，是使用者接触模块的第一入口。
 
 \`\`\`bash
 # 生态 A
-pkg-a add ｛｛MODULE_NAME｝｝
+pkg-a add ｛｛模块名称｝｝
 
 # 生态 B
-pkg-b install ｛｛MODULE_NAME｝｝
+pkg-b install ｛｛模块名称｝｝
 
 # 生态 C
-pkg-c get ｛｛MODULE_NAME｝｝
+pkg-c get ｛｛模块名称｝｝
 \`\`\`
 
 ### 从源码构建
 
 \`\`\`bash
-git clone ｛｛REPO_URL｝｝
-cd ｛｛REPO_PATH｝｝
-｛｛INSTALL_DEPENDENCIES_COMMAND｝｝
-｛｛BUILD_COMMAND｝｝
+git clone ｛｛仓库地址｝｝
+cd ｛｛仓库路径｝｝
+｛｛安装依赖命令｝｝
+｛｛构建命令｝｝
 \`\`\`
 
 ## 快速开始
 
 \`\`\`
-import { ｛｛EXPORTED_FUNCTION｝｝ } from "｛｛MODULE_NAME｝｝";
+import { ｛｛导出函数｝｝ } from "｛｛模块名称｝｝";
 
-const result = ｛｛EXPORTED_FUNCTION｝｝(｛｛SAMPLE_INPUT｝｝);
-console.log(result); // ｛｛SAMPLE_OUTPUT｝｝
+const result = ｛｛导出函数｝｝(｛｛示例输入｝｝);
+console.log(result); // ｛｛示例输出｝｝
 \`\`\`
 
 ## API 文档
 
-### ｛｛FUNCTION_NAME｝｝
+### ｛｛函数名称｝｝
 
 \`\`\`
-｛｛FUNCTION_NAME｝｝(｛｛PARAM｝｝: ｛｛PARAM_TYPE｝｝) -> ｛｛RETURN_TYPE｝｝
+｛｛函数名称｝｝(｛｛参数｝｝: ｛｛参数类型｝｝) -> ｛｛返回类型｝｝
 \`\`\`
 
-｛｛FUNCTION_DESCRIPTION｝｝
+｛｛函数描述｝｝
 
 **参数**：
 
 | 参数 | 类型 | 必填 | 默认值 | 说明 |
 |------|------|------|--------|------|
-| ｛｛PARAM｝｝ | ｛｛PARAM_TYPE｝｝ | 是 | - | ｛｛PARAM_DESCRIPTION｝｝ |
-| ｛｛OPTIONAL_PARAM｝｝ | ｛｛OPTIONAL_PARAM_TYPE｝｝ | 否 | ｛｛DEFAULT_VALUE｝｝ | ｛｛OPTIONAL_PARAM_DESCRIPTION｝｝ |
+| ｛｛参数｝｝ | ｛｛参数类型｝｝ | 是 | - | ｛｛参数说明｝｝ |
+| ｛｛可选参数｝｝ | ｛｛可选参数类型｝｝ | 否 | ｛｛默认值｝｝ | ｛｛可选参数说明｝｝ |
 
-**返回值**：`｛｛RETURN_TYPE｝｝` — ｛｛RETURN_DESCRIPTION｝｝
+**返回值**：`｛｛返回类型｝｝` — ｛｛返回值说明｝｝
 
 **示例**：
 
 \`\`\`
-｛｛USAGE_EXAMPLE｝｝
+｛｛使用示例｝｝
 \`\`\`
 
 ---
 
-### ｛｛ANOTHER_FUNCTION_NAME｝｝
+### ｛｛另一函数名称｝｝
 
 \`\`\`
-｛｛ANOTHER_FUNCTION_NAME｝｝(｛｛PARAM｝｝: ｛｛PARAM_TYPE｝｝) -> ｛｛RETURN_TYPE｝｝
+｛｛另一函数名称｝｝(｛｛参数｝｝: ｛｛参数类型｝｝) -> ｛｛返回类型｝｝
 \`\`\`
 
-｛｛ANOTHER_FUNCTION_DESCRIPTION｝｝
+｛｛另一函数描述｝｝
 
 （参数表、返回值、示例同上格式）
 
@@ -103,37 +103,37 @@ console.log(result); // ｛｛SAMPLE_OUTPUT｝｝
 
 ## 高级用法
 
-### ｛｛ADVANCED_TOPIC_1｝｝
+### ｛｛高级主题1｝｝
 
-｛｛ADVANCED_DESCRIPTION_1｝｝
-
-\`\`\`
-｛｛ADVANCED_EXAMPLE_1｝｝
-\`\`\`
-
-### ｛｛ADVANCED_TOPIC_2｝｝
-
-｛｛ADVANCED_DESCRIPTION_2｝｝
+｛｛高级说明1｝｝
 
 \`\`\`
-｛｛ADVANCED_EXAMPLE_2｝｝
+｛｛高级示例1｝｝
+\`\`\`
+
+### ｛｛高级主题2｝｝
+
+｛｛高级说明2｝｝
+
+\`\`\`
+｛｛高级示例2｝｝
 \`\`\`
 
 ## 相关模块
 
 | 模块 | 说明 |
 |------|------|
-| [@｛｛SCOPE｝｝/｛｛RELATED_MODULE_A｝｝](｛｛URL_A｝｝) | ｛｛DESCRIPTION_A｝｝ |
-| [@｛｛SCOPE｝｝/｛｛RELATED_MODULE_B｝｝](｛｛URL_B｝｝) | ｛｛DESCRIPTION_B｝｝ |
+| [@｛｛作用域｝｝/｛｛关联模块A｝｝](｛｛链接A｝｝) | ｛｛描述A｝｝ |
+| [@｛｛作用域｝｝/｛｛关联模块B｝｝](｛｛链接B｝｝) | ｛｛描述B｝｝ |
 
 ## 贡献指南
 
-欢迎贡献！请阅读 [贡献指南](｛｛CONTRIBUTING_URL｝｝) 了解详情。
+欢迎贡献！请阅读 [贡献指南](｛｛贡献指南链接｝｝) 了解详情。
 
 1. Fork 本仓库
-2. 创建特性分支：`git checkout -b feature/｛｛FEATURE_NAME｝｝`
-3. 提交变更：`git commit -m "｛｛CONVENTIONAL_COMMIT_MESSAGE｝｝"`
-4. 推送分支：`git push origin feature/｛｛FEATURE_NAME｝｝`
+2. 创建特性分支：`git checkout -b feature/｛｛特性名称｝｝`
+3. 提交变更：`git commit -m "｛｛约定式提交信息｝｝"`
+4. 推送分支：`git push origin feature/｛｛特性名称｝｝`
 5. 提交 Pull Request
 
 ## 变更日志
@@ -142,7 +142,7 @@ console.log(result); // ｛｛SAMPLE_OUTPUT｝｝
 
 ## 许可证
 
-[｛｛LICENSE｝｝](｛｛LICENSE_FILE｝｝) @ ｛｛AUTHOR｝｝
+[｛｛许可证｝｝](｛｛许可证文件｝｝) @ ｛｛作者｝｝
 ```
 
 ---

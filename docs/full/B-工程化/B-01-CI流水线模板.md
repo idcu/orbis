@@ -23,7 +23,6 @@
 variables:
   PROJECT_NAME: "｛｛项目名称｝｝"
   RUNTIME_VERSION: "｛｛运行时版本｝｝"
-  NODE_VERSION: "｛｛运行时版本｝｝"
   COVERAGE_THRESHOLD: "｛｛覆盖率阈值｝｝"
   MAX_SIZE_KB: "｛｛产物大小上限KB｝｝"
 
