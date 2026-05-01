@@ -1,0 +1,19 @@
+{
+  "name": "docs-site-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "VitePress 文档站模板 — 支持 Gitee Pages / GitHub Pages 一键部署",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "setup": "bash scripts/setup.sh",
+    "deploy:gitee": "bash scripts/deploy-gitee.sh",
+    "deploy:gh-pages": "bash scripts/deploy-gh-pages.sh"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  }
+}
